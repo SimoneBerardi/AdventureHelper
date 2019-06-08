@@ -10,6 +10,7 @@ const campaignSchema = new mongoose.Schema({
 
 campaignSchema.pre('remove', function (next) {
   this.model('Adventure').deleteMany({ campaign: this._id }, next);
+  this.model('Character').deleteMany({ campaign: this._id }, next);
 });
 
 const Campaign = mongoose.model('Campaign', campaignSchema);

@@ -1,0 +1,7 @@
+1 - Creazione di una nuova sottocartella nella cartella modules
+2 - Creazione dei file per il modulo
+  2.1 - Creazione del file model.js
+  2.2 - Creazione file router.js
+3 - Aggiunta modulo nella struttura dai esportata da database.js
+4 - Aggiunta caricamento router nel file app.js
+5 - Aggiunta operazioni di inizializzazione per ambiente di sviluppo nel file bin/www

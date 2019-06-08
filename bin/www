@@ -41,9 +41,10 @@ connectDb().then(async () => {
     await Promise.all([
       models.User.deleteMany({}),
       models.Campaign.deleteMany({}),
+      models.Character.deleteMany({}),
     ]);
 
-    createCampaignsWithAdventures();
+    initializeDatabase();
   }
 
   server.listen(port);
@@ -51,7 +52,7 @@ connectDb().then(async () => {
   server.on('listening', onListening);
 });
 
-const createCampaignsWithAdventures = async () => {
+const initializeDatabase = async () => {
   const campaign1 = new models.Campaign({
     name: 'Campagna 1',
     description: 'Descrizione campagna 1',
@@ -95,6 +96,51 @@ const createCampaignsWithAdventures = async () => {
     levelRange: '1 - 4',
   });
   await adventure4.save();
+
+  const character1 = new models.Character({
+    campaign: campaign1.id,
+    name: "Personaggio 1",
+    playerName: "Giocatore 1",
+    background: "Background giocatore 1",
+    publicBackground: "Background pubblico del giocatore 1",
+  });
+  await character1.save();
+
+  const character2 = new models.Character({
+    campaign: campaign1.id,
+    name: "Personaggio 2",
+    playerName: "Giocatore 2",
+    background: "Background giocatore 2",
+    publicBackground: "Background pubblico del giocatore 2",
+  });
+  await character2.save();
+
+  const character3 = new models.Character({
+    campaign: campaign1.id,
+    name: "Personaggio 3",
+    playerName: "Giocatore 3",
+    background: "Background giocatore 3",
+    publicBackground: "Background pubblico del giocatore 3",
+  });
+  await character3.save();
+
+  const character4 = new models.Character({
+    campaign: campaign2.id,
+    name: "Personaggio 4",
+    playerName: "Giocatore 4",
+    background: "Background giocatore 4",
+    publicBackground: "Background pubblico del giocatore 4",
+  });
+  await character4.save();
+
+  const character5 = new models.Character({
+    campaign: campaign2.id,
+    name: "Personaggio 5",
+    playerName: "Giocatore 5",
+    background: "Background giocatore 5",
+    publicBackground: "Background pubblico del giocatore 5",
+  });
+  await character5.save();
 }
 
 /**
