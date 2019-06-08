@@ -9,6 +9,7 @@ var debug = require('debug')('adventurehelper:server');
 var http = require('http');
 const models = require('../database').models;
 const connectDb = require('../database').connectDb;
+const bcrypt = require('bcrypt');
 
 if (process.env.NODE_ENV !== 'production') {
   const dotenv = require('dotenv');
@@ -53,6 +54,12 @@ connectDb().then(async () => {
 });
 
 const initializeDatabase = async () => {
+  const user1 = new models.User({
+    username: 'simonberardi@gmail.com',
+    password: await bcrypt.hash('password', 10),
+  });
+  await user1.save();
+
   const campaign1 = new models.Campaign({
     name: 'Campagna 1',
     description: 'Descrizione campagna 1',

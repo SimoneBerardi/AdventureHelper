@@ -4,6 +4,10 @@ var router = express.Router();
 var adventuresRouter = require('./adventures/router');
 var charactersRouter = require('./characters/router');
 
+const loadJwt = require('../../middleware/auth').loadJwt;
+
+router.all('*', loadJwt);
+
 router.get('/', async (req, res) => {
   try {
     const campaigns = await req.context.models.Campaign.find();
