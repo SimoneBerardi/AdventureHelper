@@ -7,6 +7,13 @@
 var app = require('../app');
 var debug = require('debug')('adventurehelper:server');
 var http = require('http');
+const models = require('../database').models;
+const connectDb = require('../database').connectDb;
+
+if (process.env.NODE_ENV !== 'production') {
+  const dotenv = require('dotenv');
+  dotenv.config();
+}
 
 /**
  * Get port from environment and store in Express.
@@ -25,9 +32,70 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+//TODO incapsulare la parte di gestione database in un altro file
+
+const eraseDatabaseOnSync = true;
+
+connectDb().then(async () => {
+  if (eraseDatabaseOnSync) {
+    await Promise.all([
+      models.User.deleteMany({}),
+      models.Campaign.deleteMany({}),
+    ]);
+
+    createCampaignsWithAdventures();
+  }
+
+  server.listen(port);
+  server.on('error', onError);
+  server.on('listening', onListening);
+});
+
+const createCampaignsWithAdventures = async () => {
+  const campaign1 = new models.Campaign({
+    name: 'Campagna 1',
+    description: 'Descrizione campagna 1',
+  });
+  await campaign1.save();
+
+  const campaign2 = new models.Campaign({
+    name: 'Campagna 2',
+    description: 'Descrizione campagna 2',
+  });
+  await campaign2.save();
+
+  const adventure1 = new models.Adventure({
+    campaign: campaign1.id,
+    name: 'Avventura 1',
+    description: 'Descrizione avventura 1',
+    levelRange: '1 - 3',
+  });
+  await adventure1.save();
+
+  const adventure2 = new models.Adventure({
+    campaign: campaign1.id,
+    name: 'Avventura 2',
+    description: 'Descrizione avventura 21',
+    levelRange: '3 - 5',
+  });
+  await adventure2.save();
+
+  const adventure3 = new models.Adventure({
+    campaign: campaign1.id,
+    name: 'Avventura 3',
+    description: 'Descrizione avventura 3',
+    levelRange: '5 - 8',
+  });
+  await adventure3.save();
+
+  const adventure4 = new models.Adventure({
+    campaign: campaign2.id,
+    name: 'Avventura 4',
+    description: 'Descrizione avventura 3',
+    levelRange: '1 - 4',
+  });
+  await adventure4.save();
+}
 
 /**
  * Normalize a port into a number, string, or false.

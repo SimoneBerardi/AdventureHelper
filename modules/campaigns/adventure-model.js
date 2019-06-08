@@ -1,12 +1,19 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const adventureSchema = new mongoose.Schema({
-  campaign: {type: mongoose.Schema.Types.ObjectId, ref: 'Campaign'},
-  name: String,
+  campaign: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Campaign',
+    required: true
+  },
+  name: {
+    type: String,
+    required: true,
+  },
   description: String,
   levelRange: String,
 });
 
 const Adventure = mongoose.model('Adventure', adventureSchema);
 
-export default Adventure;
+module.exports = Adventure;
