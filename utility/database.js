@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-const User = require('./modules/users/model');
-const Campaign = require('./modules/campaigns/model');
-const Adventure = require('./modules/campaigns/adventures/model');
-const Character = require('./modules/campaigns/characters/model');
+const User = require('../modules/users/model');
+const Campaign = require('../modules/campaigns/model');
+const Adventure = require('../modules/campaigns/adventures/model');
+const Character = require('../modules/campaigns/characters/model');
 
 const connectDb = () => {
   mongoose.set('useNewUrlParser', true);

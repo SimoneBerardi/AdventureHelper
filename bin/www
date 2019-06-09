@@ -42,10 +42,11 @@ connectDb().then(async () => {
     await Promise.all([
       models.User.deleteMany({}),
       models.Campaign.deleteMany({}),
+      models.Adventure.deleteMany({}),
       models.Character.deleteMany({}),
     ]);
 
-    initializeDatabase();
+    await initializeDatabase();
   }
 
   server.listen(port);
@@ -61,12 +62,14 @@ const initializeDatabase = async () => {
   await user1.save();
 
   const campaign1 = new models.Campaign({
+    user: user1.id,
     name: 'Campagna 1',
     description: 'Descrizione campagna 1',
   });
   await campaign1.save();
 
   const campaign2 = new models.Campaign({
+    user: user1.id,
     name: 'Campagna 2',
     description: 'Descrizione campagna 2',
   });

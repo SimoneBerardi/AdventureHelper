@@ -17,8 +17,16 @@ const characterSchema = new mongoose.Schema({
   background: String,
   publicBackground: String,
   imageUrl: String,
-  shareToken: String,
+  shareToken: {
+    value: String,
+    created: Date,
+  }
 });
+
+characterSchema.methods.filterPublicContent = function () {
+  this.background = null;
+  this.shareToken = null;
+}
 
 const Character = mongoose.model('Character', characterSchema);
 

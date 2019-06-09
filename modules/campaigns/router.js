@@ -1,85 +1,26 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var adventuresRouter = require('./adventures/router');
-var charactersRouter = require('./characters/router');
+const auth = require('../../utility/authentication');
 
-const loadJwt = require('../../middleware/auth').loadJwt;
+const controller = require('./controller');
 
-router.all('*', loadJwt);
+const adventuresRouter = require('./adventures/router');
+const charactersRouter = require('./characters/router');
 
-router.get('/', async (req, res) => {
-  try {
-    const campaigns = await req.context.models.Campaign.find();
-    return res.send(campaigns);
-  } catch (err) {
-    return res.status(500).send();
-  }
-});
+router.all('*', auth.loadJwtMw);
 
-router.post('/', async (req, res) => {
-  try {
-    var campaign = await req.context.models.Campaign.create(req.body);
-    return res.send(campaign);
-  } catch (err) {
-    return res.status(500).send();
-  }
-});
+router.all('/', auth.checkIsMaster);
+router.all('/:id', auth.checkIsMaster);
+router.all('/:id/share', auth.checkIsMaster);
+router.all('/:campaignId/adventures', auth.checkIsMaster);
 
-router.get('/:id', async (req, res) => {
-  try {
-    const campaign = await req.context.models.Campaign.findById(
-      req.params.id,
-    );
-
-    if (campaign.length == 0)
-      return res.status(404).send();
-
-    return res.send(campaign);
-  } catch (err) {
-    return res.status(500).send();
-  }
-});
-
-router.put('/:id', async (req, res) => {
-  try {
-    const campaign = await req.context.models.Campaign.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
-
-    if (campaign == null)
-      return res.status(404).send();
-
-    return res.send(campaign);
-  } catch (err) {
-    return res.status(500).send();
-  }
-});
-
-router.delete('/:id', async (req, res) => {
-  try {
-    const campaign = await req.context.models.Campaign.findByIdAndRemove(
-      req.params.id,
-    );
-
-    if (campaign == null)
-      return res.status(404).send();
-
-    return res.send();
-  } catch (err) {
-    return res.status(500).send();
-  }
-});
-
-router.post('/:id/share', async (req, res) => {
-  try {
-    res.status(501).send();
-  } catch (err) {
-    return res.status(500), send();
-  }
-});
+router.get('/', controller.getAll);
+router.post('/', controller.add);
+router.get('/:id', controller.getById);
+router.put('/:id', controller.modify);
+router.delete('/:id', controller.remove);
+router.post('/:id/share', controller.share);
 
 router.use('/:campaignId/adventures', adventuresRouter);
 router.use('/:campaignId/characters', charactersRouter);
