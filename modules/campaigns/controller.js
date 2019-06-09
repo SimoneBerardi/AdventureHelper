@@ -13,6 +13,7 @@ const getAll = async (req, res) => {
 
 const add = async (req, res) => {
   try {
+    req.body.user = req.context.user._id;
     const campaign = await req.context.models.Campaign.create(req.body);
     return res.send(campaign);
   } catch (err) {

@@ -1,4 +1,5 @@
 const bcrypt = require('bcrypt');
+const auth = require('../../utility/authentication');
 
 const postRegister = async (req, res) => {
   try {
@@ -29,7 +30,7 @@ const postLogin = async (req, res) => {
 
     if (!isMaster) {
       character = await req.context.models.Character.findOne({
-        "shareToken.value": req.body.username,
+        "shareToken.value": req.body.password,
       });
 
       if (character != null) isCharacter = true;
@@ -39,7 +40,7 @@ const postLogin = async (req, res) => {
       return res.status(401).send();
 
     return res.send({
-      token: await createJwt({
+      token: await auth.createJwt({
         sessionData: {
           //TODO in caso vi sia un utente collegato al personaggio va caricato il suo id
           _id: isMaster ? user._id.toString() : null,

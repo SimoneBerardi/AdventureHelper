@@ -1,0 +1,801 @@
+{
+	"info": {
+		"_postman_id": "3f4246dc-fac1-4be0-83f6-5ab676713fa3",
+		"name": "AdventureHelper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "{{url}}/users/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"nuovo_utente@gmail.com\",\n\t\"password\": \"nuova password\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/users/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[master] {{url}}/users/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"master-user@gmail.com\",\n\t\"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/users/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[character] {{url}}/users/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"WaFCrP4ok\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/users/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Campaigns",
+			"item": [
+				{
+					"name": "Adventures",
+					"item": [
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/adventures",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "89280f26-60c3-47ed-942b-320357f65a2e",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/adventures",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"adventures"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/adventures",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "5d3906c2-eb22-4989-868e-0f730ac33606",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"name\": \"Nuova avventura\",\n\t\"description\": \"Descrizione nuova avventura\",\n\t\"levelRange\": \"Range livelli nuova avventura\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/adventures",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"adventures"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/adventures/{{adventureId}}",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "f42e2685-6d99-4c3b-84f6-a66af7a790cd",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/adventures',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"adventureId\", response.json()[0]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/adventures/{{adventureId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"adventures",
+										"{{adventureId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/adventures/{{adventureId}}",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "079863be-2c78-449f-90d2-59088362d459",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/adventures',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"adventureId\", response.json()[0]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"name\": \"Avventura modificata\",\n\t\"description\": \"Descrizione avventura modificata\",\n\t\"levelRange\": \"Range livelli modificato\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/adventures/{{adventureId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"adventures",
+										"{{adventureId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/adventures/{{adventureId}}",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "c2a44327-3930-4ef5-bf15-f1a2e7c62fc9",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/adventures',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"adventureId\", response.json()[1]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/adventures/{{adventureId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"adventures",
+										"{{adventureId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Characters",
+					"item": [
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/characters",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "e5701dd1-956f-4f61-8372-56d4b4c9c63c",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/characters",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/characters",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "ca7a97a1-e154-4d03-8b2c-f0029aca4f65",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"name\": \"Nuovo personaggio\",\n\t\"playerName\": \"Giocatore nuovo personaggio\",\n\t\"background\": \"Background nuovo personaggio\",\n\t\"publicBackground\": \"Background pubblico del nuovo personaggio\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/characters",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"characters"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/characters/{{characterId}}",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "7b5ac2b9-44eb-4e17-9343-3da3a32d0b75",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/characters',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"characterId\", response.json()[0]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{jwtToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/characters/{{characterId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"characters",
+										"{{characterId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/characters/{{characterId}}",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "b90c620b-2884-4916-aa2d-e19fd5f410de",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/characters',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"characterId\", response.json()[1]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"name\": \"Personaggio modificato\",\n\t\"playerName\": \"Giocatore personaggio modificato\",\n\t\"background\": \"Background personaggio modificato\",\n\t\"publicBackground\": \"Background pubblico del personaggio modificato\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/characters/{{characterId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"characters",
+										"{{characterId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{url}}/campaigns/{{campaignId}}/characters/{{characterId}}",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "f4c55a5e-d538-4d4f-a1da-34e420122711",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/characters',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"characterId\", response.json()[1]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/characters/{{characterId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"characters",
+										"{{characterId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "{{url}}/campaigns",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c03a8881-aa01-4131-872b-b7994c114f41",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/campaigns",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"campaigns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/campaigns",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Nuova campagna\",\n\t\"description\": \"Descrizione nuova campagna\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/campaigns",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"campaigns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/campaigns/{{campaignId}}",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9dbd857c-61dc-4443-9b55-21f710687a7b",
+								"exec": [
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"url\") + '/campaigns',",
+									"    method: 'GET',",
+									"}, function (err, response) {",
+									"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/campaigns/{{campaignId}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"campaigns",
+								"{{campaignId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/campaigns/{{campaignId}}",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "58962d7c-20ff-400f-81f4-3be2f20dec05",
+								"exec": [
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"url\") + '/campaigns',",
+									"    method: 'GET',",
+									"}, function (err, response) {",
+									"    pm.environment.set(\"campaignId\", response.json()[1]._id);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Campagna modificata\",\n\t\"description\": \"Descrizione campagna modificata\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/campaigns/{{campaignId}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"campaigns",
+								"{{campaignId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/campaigns/{{campaignId}}",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "03125a67-3d01-4c26-864e-50c0159e88d9",
+								"exec": [
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"url\") + '/campaigns',",
+									"    method: 'GET',",
+									"}, function (err, response) {",
+									"    pm.environment.set(\"campaignId\", response.json()[1]._id);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/campaigns/{{campaignId}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"campaigns",
+								"{{campaignId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/campaigns/{{campaignId}}/share",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5a8472dd-1485-4485-8cfa-16126664be37",
+								"exec": [
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"url\") + '/campaigns',",
+									"    method: 'GET',",
+									"}, function (err, response) {",
+									"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/campaigns/{{campaignId}}/share",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"campaigns",
+								"{{campaignId}}",
+								"share"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

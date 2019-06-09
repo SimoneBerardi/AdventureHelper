@@ -7,8 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('adventurehelper:server');
 var http = require('http');
-const models = require('../database').models;
-const connectDb = require('../database').connectDb;
+const models = require('../utility/database').models;
+const connectDb = require('../utility/database').connectDb;
 const bcrypt = require('bcrypt');
 
 if (process.env.NODE_ENV !== 'production') {
@@ -56,7 +56,7 @@ connectDb().then(async () => {
 
 const initializeDatabase = async () => {
   const user1 = new models.User({
-    username: 'simonberardi@gmail.com',
+    username: 'master-user@gmail.com',
     password: await bcrypt.hash('password', 10),
   });
   await user1.save();
@@ -113,6 +113,10 @@ const initializeDatabase = async () => {
     playerName: "Giocatore 1",
     background: "Background giocatore 1",
     publicBackground: "Background pubblico del giocatore 1",
+    shareToken: {
+      created: "2019-06-09T13:18:23.229Z",
+      value: "WaFCrP4ok",
+    }
   });
   await character1.save();
 

@@ -36,7 +36,7 @@ const loadJwtMw = async (req, res, next) => {
       var isMaster = authorization == null || authorization.split(" ")[1] !== 'isCharacter';
       if (isMaster)
         user = await req.context.models.User.findOne({
-          username: "simonberardi@gmail.com",
+          username: "master-user@gmail.com",
         });
       else
         character = await req.context.models.Character.findOne({
