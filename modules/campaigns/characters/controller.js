@@ -1,4 +1,7 @@
 const auth = require('../../../utility/authentication');
+const { promisify } = require('util');
+const fs = require('fs');
+const path = require('path');
 
 const getAll = async (req, res) => {
   try {
@@ -49,6 +52,8 @@ const modify = async (req, res) => {
     if (!auth.isMaster(req) && !auth.isCharacterOwner(req, req.params.id))
       return res.status(403).send();
 
+    req.body._id = req.params.id;
+    await _saveBase64Image(req.body);
     const character = await req.context.models.Character.findByIdAndUpdate(
       req.params.id,
       req.body,
@@ -63,6 +68,21 @@ const modify = async (req, res) => {
     return res.status(500).send();
   }
 };
+
+const _saveBase64Image = async (character) => {
+  if (!character.image)
+    return;
+
+  var base64Data = character.image.replace(/^data:image\/png;base64,/, "");
+  var imagePath = path.join(process.env.RESOURCES_PATH, 'characters');
+  await promisify(fs.mkdir)(imagePath, { recursive: true });
+  var imageName = character._id + '.png';
+  var imagePath = path.join(imagePath, imageName);
+  await promisify(fs.writeFile)(imagePath, base64Data, 'base64');
+
+  character.imageUrl = '/resources/characters/' + imageName;
+  delete character.image;
+}
 
 const remove = async (req, res) => {
   try {
