@@ -3,8 +3,9 @@ const bcrypt = require('bcrypt');
 
 const User = require('../modules/users/model');
 const Campaign = require('../modules/campaigns/model');
-const Adventure = require('../modules/campaigns/adventures/model');
-const Character = require('../modules/campaigns/characters/model');
+const Adventure = require('../modules/adventures/model');
+const Character = require('../modules/characters/model');
+const Npc = require('../modules/npcs/model')
 
 const models = { User, Campaign, Adventure, Character };
 
@@ -24,6 +25,7 @@ const initializeDb = async () => {
       models.Campaign.deleteMany({}),
       models.Adventure.deleteMany({}),
       models.Character.deleteMany({}),
+      models.Npc.deleteMany({}),
     ]);
 
     const user1 = new models.User({
@@ -126,6 +128,33 @@ const initializeDb = async () => {
       publicBackground: "Background pubblico del giocatore 5",
     });
     await character5.save();
+
+    const npc1 = new models.Npc({
+      campaign: campaign1.id,
+      name: 'Npc 1',
+      description: 'Descrizione npc 1',
+      info: 'Info npc 1',
+      publicInfo: 'Info pubbliche dell\'npc 1',
+    });
+    await npc1.save();
+
+    const npc2 = new models.Npc({
+      campaign: campaign1.id,
+      name: 'Npc 2',
+      description: 'Descrizione npc 2',
+      info: 'Info npc 2',
+      publicInfo: 'Info pubbliche dell\'npc 2',
+    });
+    await npc2.save();
+
+    const npc3 = new models.Npc({
+      campaign: campaign1.id,
+      name: 'Npc 3',
+      description: 'Descrizione npc 3',
+      info: 'Info npc 3',
+      publicInfo: 'Info pubbliche dell\'npc 3',
+    });
+    await npc3.save();
   }
 }
 

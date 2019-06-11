@@ -1,4 +1,4 @@
-const auth = require('../../../utility/authentication');
+const auth = require('../../utility/authentication');
 const { promisify } = require('util');
 const fs = require('fs');
 const path = require('path');
@@ -8,11 +8,10 @@ const getAll = async (req, res) => {
     const characters = await req.context.models.Character.find({
       campaign: req.params.campaignId,
     });
-    if (!auth.isMaster(req)) {
+    if (!req.context.user.isCampaignMaster)
       characters.forEach(character => {
         character.filterPublicContent();
       });
-    }
     return res.send(characters);
   } catch (err) {
     return res.status(500).send();
@@ -21,6 +20,7 @@ const getAll = async (req, res) => {
 
 const add = async (req, res) => {
   try {
+    req.body.campaign = req.params.campaignId;
     var character = await req.context.models.Character.create(req.body);
     return res.send(character);
   } catch (err) {
@@ -30,9 +30,6 @@ const add = async (req, res) => {
 
 const getById = async (req, res) => {
   try {
-    if (!auth.isMaster(req) && !auth.isCharacterOwner(req, req.params.id))
-      return res.status(403).send();
-
     const character = await req.context.models.Character.find({
       _id: req.params.id,
       campaign: req.params.campaignId,
@@ -40,6 +37,9 @@ const getById = async (req, res) => {
 
     if (character.length == 0)
       return res.status(404).send();
+
+    if (!req.context.user.isCampaignMaster)
+      character.filterPublicContent();
 
     return res.send(character);
   } catch (err) {
@@ -49,7 +49,7 @@ const getById = async (req, res) => {
 
 const modify = async (req, res) => {
   try {
-    if (!auth.isMaster(req) && !auth.isCharacterOwner(req, req.params.id))
+    if (!req.context.user.isCampaignMaster && !_isCharacterOwner(req, req.params.id))
       return res.status(403).send();
 
     req.body._id = req.params.id;
@@ -68,6 +68,10 @@ const modify = async (req, res) => {
     return res.status(500).send();
   }
 };
+
+const _isCharacterOwner = function(req, characterId){
+  return req.context.user.character !== characterId;
+}
 
 const _saveBase64Image = async (character) => {
   if (!character.image)

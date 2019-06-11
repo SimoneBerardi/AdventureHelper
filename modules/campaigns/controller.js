@@ -23,9 +23,10 @@ const add = async (req, res) => {
 
 const getById = async (req, res) => {
   try {
-    const campaign = await req.context.models.Campaign.findById(
-      req.params.id,
-    );
+    const campaign = await req.context.models.Campaign.findOne({
+      _id: req.params.id,
+      user: req.context.user._id,
+    });
 
     if (campaign.length == 0)
       return res.status(404).send();
@@ -38,8 +39,12 @@ const getById = async (req, res) => {
 
 const modify = async (req, res) => {
   try {
-    const campaign = await req.context.models.Campaign.findByIdAndUpdate(
-      req.params.id,
+    req.body._id = req.params.id;
+    const campaign = await req.context.models.Campaign.findOneAndUpdate(
+      {
+        _id: req.params.id,
+        user: req.context.user._id,
+      },
       req.body,
       { new: true }
     );
@@ -55,9 +60,10 @@ const modify = async (req, res) => {
 
 const remove = async (req, res) => {
   try {
-    const campaign = await req.context.models.Campaign.findById(
-      req.params.id,
-    );
+    const campaign = await req.context.models.Campaign.findById({
+      _id: req.params.id,
+      user: req.context.user._id,
+    });
 
     if (campaign == null)
       return res.status(404).send();
@@ -72,6 +78,14 @@ const remove = async (req, res) => {
 
 const share = async (req, res) => {
   try {
+    const campaign = await req.context.models.Campaign.findById({
+      _id: req.params.id,
+      user: req.context.user._id,
+    });
+
+    if (campaign == null)
+      return res.status(404).send();
+
     const characters = await req.context.models.Character.find({
       campaign: req.params.id,
     });
@@ -82,7 +96,7 @@ const share = async (req, res) => {
       character.shareToken.created = Date.now();
       await character.save();
     }
-    
+
     return res.send();
   } catch (err) {
     return res.status(500), send();

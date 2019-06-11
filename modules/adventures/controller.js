@@ -12,6 +12,7 @@ const getAll = async (req, res) => {
 
 const add = async (req, res) => {
   try {
+    req.body.campaign = req.params.campaignId;
     var adventure = await req.context.models.Adventure.create(req.body);
     return res.send(adventure);
   } catch (err) {
@@ -37,6 +38,7 @@ const getById = async (req, res) => {
 
 const modify = async (req, res) => {
   try {
+    req.body._id = req.params.id;
     const adventure = await req.context.models.Adventure.findOneAndUpdate(
       {
         _id: req.params.id,

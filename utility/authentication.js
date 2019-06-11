@@ -22,11 +22,7 @@ const createJwt = (details) => {
   return token;
 }
 
-const verifyJwt = async (token) => {
-  return await jwt.verify(token, process.env.JWT_SECRET);
-}
-
-const loadJwtMw = async (req, res, next) => {
+const verifyJwt = async (req, res, next) => {
   try {
     const authorization = req.get('authorization');
 
@@ -50,7 +46,7 @@ const loadJwtMw = async (req, res, next) => {
       };
     } else {
       var token = authorization.split(" ")[1];
-      var decodedToken = await verifyJwt(token);
+      var decodedToken = await _verifyJwt(token);
       req.context.user = decodedToken.details;
     }
     next();
@@ -59,28 +55,60 @@ const loadJwtMw = async (req, res, next) => {
   }
 }
 
-const checkIsMaster = async (req, res, next) => {
-  try {
-    if (!isMaster(req))
-      return res.status(403).send();
-    next();
-  } catch (err) {
-    return res.status(500).send();
+const _verifyJwt = async (token) => {
+  return await jwt.verify(token, process.env.JWT_SECRET);
+}
+
+const checkIsLoggedAsMaster = async (req, res, next) => {
+  _checkIsLoggedAsMaster(req, res);
+  next();
+}
+
+const _checkIsLoggedAsMaster = function (req, res) {
+  if (!_isMaster(req))
+    return res.status(403).send();
+}
+
+const _isMaster = function (req) {
+  return req.context.user._id != null;
+}
+
+const checkIsCampaignMasterOrPlayer = async (req, res, next) => {
+  var isMaster = _isMaster(req);
+  if (isMaster) {
+    _checkIsMaster(req, res);
+  } else {
+    _checkIsCampaignPlayer(req, res);
   }
+  next();
 }
 
-const isMaster = function (req) {
-  return req.context.user._id
+const _checkIsMaster = function (req, res) {
+  const campaign = await req.context.models.Campaign.findById(req.params.campaignId);
+  if (campaign != null && campaign.user !== req.context.user._id)
+    return res.status(403).send();
+
+  req.context.user.isCampaignMaster = true;
 }
 
-const isCharacterOwner = function (req, characterId) {
-  return req.context.user.character === characterId;
+const _checkIsCampaignPlayer = function (req, res) {
+  const character = await req.context.models.Character.findById(req.context.user.character);
+  if (character != null && character.campaign !== req.params.campaignId)
+    return res.status(403).send();
+
+  req.context.user.isCampaignMaster = false;
+}
+
+const checkIsCampaignMaster = function (req, res, next) {
+  _checkIsLoggedAsMaster(req, res);
+  _checkIsMaster(req, res);
+  next();
 }
 
 module.exports = {
   createJwt: createJwt,
-  loadJwtMw: loadJwtMw,
-  checkIsMaster: checkIsMaster,
-  isMaster: isMaster,
-  isCharacterOwner: isCharacterOwner,
+  verifyJwt: verifyJwt,
+  checkIsLoggedAsMaster: checkIsLoggedAsMaster,
+  checkIsCampaignMasterOrPlayer: checkIsCampaignMasterOrPlayer,
+  checkIsCampaignMaster: checkIsCampaignMaster,
 }
