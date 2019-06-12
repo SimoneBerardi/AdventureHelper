@@ -83,23 +83,23 @@ const checkIsCampaignMasterOrPlayer = async (req, res, next) => {
   next();
 }
 
-const _checkIsMaster = function (req, res) {
+const _checkIsMaster = async (req, res) => {
   const campaign = await req.context.models.Campaign.findById(req.params.campaignId);
-  if (campaign != null && campaign.user !== req.context.user._id)
+  if (campaign != null && campaign.user.toString() !== req.context.user._id)
     return res.status(403).send();
 
   req.context.user.isCampaignMaster = true;
 }
 
-const _checkIsCampaignPlayer = function (req, res) {
+const _checkIsCampaignPlayer = async (req, res) => {
   const character = await req.context.models.Character.findById(req.context.user.character);
-  if (character != null && character.campaign !== req.params.campaignId)
+  if (character != null && character.campaign.toString() !== req.params.campaignId)
     return res.status(403).send();
 
   req.context.user.isCampaignMaster = false;
 }
 
-const checkIsCampaignMaster = function (req, res, next) {
+const checkIsCampaignMaster = async (req, res, next) => {
   _checkIsLoggedAsMaster(req, res);
   _checkIsMaster(req, res);
   next();

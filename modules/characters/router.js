@@ -5,16 +5,15 @@ const controller = require('./controller');
 
 const auth = require('../../utility/authentication');
 
-router.get('/', auth.checkIsCampaignMasterOrPlayer);
+router.get('*', auth.checkIsCampaignMasterOrPlayer);
+
 router.get('/', controller.getAll);
 
 router.post('/', auth.checkIsCampaignMaster);
 router.post('/', controller.add);
 
-router.get('/:id', auth.checkIsCampaignMasterOrPlayer);
 router.get('/:id', controller.getById);
 
-router.put('/:id', auth.checkIsCampaignMasterOrPlayer);
 router.put('/:id', controller.modify);
 
 router.delete('/:id', auth.checkIsCampaignMaster);

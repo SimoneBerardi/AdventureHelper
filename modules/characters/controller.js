@@ -30,12 +30,12 @@ const add = async (req, res) => {
 
 const getById = async (req, res) => {
   try {
-    const character = await req.context.models.Character.find({
+    const character = await req.context.models.Character.findOne({
       _id: req.params.id,
       campaign: req.params.campaignId,
     });
 
-    if (character.length == 0)
+    if (character == null)
       return res.status(404).send();
 
     if (!req.context.user.isCampaignMaster)

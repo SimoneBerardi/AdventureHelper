@@ -28,7 +28,7 @@ const getById = async (req, res) => {
       user: req.context.user._id,
     });
 
-    if (campaign.length == 0)
+    if (campaign == null)
       return res.status(404).send();
 
     return res.send(campaign);

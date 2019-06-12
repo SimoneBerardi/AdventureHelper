@@ -7,7 +7,7 @@ const Adventure = require('../modules/adventures/model');
 const Character = require('../modules/characters/model');
 const Npc = require('../modules/npcs/model')
 
-const models = { User, Campaign, Adventure, Character };
+const models = { User, Campaign, Adventure, Character, Npc };
 
 const connectDb = () => {
   mongoose.set('useNewUrlParser', true);

@@ -5,10 +5,13 @@ const path = require('path');
 
 const getAll = async (req, res) => {
   try {
-    const npcs = await req.context.models.Npc.find({
+    var npcs = await req.context.models.Npc.find({
       campaign: req.params.campaignId,
     });
     if (!req.context.user.isCampaignMaster) {
+      npcs = npcs.filter((npc) => {
+        return npc.status === "shared";
+      });
       npcs.forEach(npc => {
         npc.filterPublicContent();
       });
@@ -32,16 +35,19 @@ const add = async (req, res) => {
 
 const getById = async (req, res) => {
   try {
-    const npc = await req.context.models.Npc.find({
+    const npc = await req.context.models.Npc.findOne({
       _id: req.params.id,
       campaign: req.params.campaignId,
     });
 
-    if (npc.length == 0)
+    if (npc == null)
       return res.status(404).send();
 
     if (!req.context.user.isCampaignMaster)
-      npc.filterPublicContent();
+      if (npc.status !== "shared")
+        return res.status(403).send();
+      else
+        npc.filterPublicContent();
 
     return res.send(npc);
   } catch (err) {
@@ -104,15 +110,16 @@ const share = async (req, res) => {
 
 const _changeStatus = async (req, res, status) => {
   try {
-    const npc = await req.context.models.Npc.find({
+    const npc = await req.context.models.Npc.findOne({
       _id: req.params.id,
       campaign: req.params.campaignId,
     });
 
-    if (npc.length == 0)
+    if (npc == null)
       return res.status(404).send();
 
     npc.status = status;
+    await npc.save();
 
     return res.send();
   } catch (err) {

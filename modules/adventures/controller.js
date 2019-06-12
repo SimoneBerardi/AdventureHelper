@@ -22,12 +22,12 @@ const add = async (req, res) => {
 
 const getById = async (req, res) => {
   try {
-    const adventure = await req.context.models.Adventure.find({
+    const adventure = await req.context.models.Adventure.findOne({
       _id: req.params.id,
       campaign: req.params.campaignId,
     });
 
-    if (adventure.length == 0)
+    if (adventure == null)
       return res.status(404).send();
 
     return res.send(adventure);

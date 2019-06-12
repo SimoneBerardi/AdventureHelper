@@ -7,8 +7,9 @@ const controller = require('./controller');
 
 const adventuresRouter = require('../adventures/router');
 const charactersRouter = require('../characters/router');
+const npcsRouter = require('../npcs/router');
 
-router.all('*', auth.verifyJwtMiddleware);
+router.all('*', auth.verifyJwt);
 
 router.all('/', auth.checkIsLoggedAsMaster);
 router.get('/', controller.getAll);
@@ -22,10 +23,8 @@ router.delete('/:id', controller.remove);
 router.all('/:id/share', auth.checkIsLoggedAsMaster);
 router.post('/:id/share', controller.share);
 
-router.all('/:campaignId/adventures', auth.checkIsMasterOrPlayer);
 router.use('/:campaignId/adventures', adventuresRouter);
-
-router.all('/:campaignId/characters', auth.checkIsMasterOrPlayer);
 router.use('/:campaignId/characters', charactersRouter);
+router.use('/:campaignId/npcs', npcsRouter);
 
 module.exports = router;

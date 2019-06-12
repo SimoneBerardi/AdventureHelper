@@ -20,4 +20,7 @@ router.put('/:id', controller.modify);
 router.delete('/:id', auth.checkIsCampaignMaster);
 router.delete('/:id', controller.remove);
 
+router.post('/:id/share', auth.checkIsCampaignMaster);
+router.post('/:id/share', controller.share);
+
 module.exports = router;
