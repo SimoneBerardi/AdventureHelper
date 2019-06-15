@@ -8,6 +8,7 @@ const controller = require('./controller');
 const adventuresRouter = require('../adventures/router');
 const charactersRouter = require('../characters/router');
 const npcsRouter = require('../npcs/router');
+const treasuresRouter = require('../treasures/router');
 
 router.all('*', auth.verifyJwt);
 
@@ -26,5 +27,6 @@ router.post('/:id/share', controller.share);
 router.use('/:campaignId/adventures', adventuresRouter);
 router.use('/:campaignId/characters', charactersRouter);
 router.use('/:campaignId/npcs', npcsRouter);
+router.use('/:campaignId/treasures', treasuresRouter);
 
 module.exports = router;

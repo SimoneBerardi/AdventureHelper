@@ -1,0 +1,902 @@
+[
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Azurite (opaque mottled deep blue)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Banded agate (translucent striped brown, blue, white, or red)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Blue quartz (transparent pale blue)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Eye agate (translucent circles of gray, white, brown, blue, or green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Hematite (opaque gray-black)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Lapis lazuli (opaque light and dark blue with yellow flecks)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Malachite (opaque striated light and dark green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Moss agate (translucent pink or yellow-white with mossy gray or green markings)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "9",
+    "diceTo": "9",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Obsidian (opaque black)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "10",
+    "diceTo": "10",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Rhodochrosite (opaque light pink)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "11",
+    "diceTo": "11",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Tiger eye (translucent brown with golden center)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "12",
+    "diceTo": "12",
+    "filter": "Gem 10 gp",
+    "quantity": "",
+    "value": "Turquoise (opaque light blue-green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Bloodstone (opaque dark gray with red flecks)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Carnelian (opaque orange to red-brown)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Chalcedony (opaque white)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Chrysoprase (translucent green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Citrine (transparent pale yellow-brown)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Jasper (opaque blue, black, or brown)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Moonstone (translucent white with pale blue glow)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Onyx (opaque bands of black and white, or pure black or white)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "9",
+    "diceTo": "9",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Quartz (transparent white, smoky gray, or yellow)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "10",
+    "diceTo": "10",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Sardonyx (opaque bands of red and white)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "11",
+    "diceTo": "11",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Star rose quartz (translucent rosy stone with white star-shaped center)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "12",
+    "diceTo": "12",
+    "filter": "Gem 50 gp",
+    "quantity": "",
+    "value": "Zircon (transparent pale blue-green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Gem 500 gp",
+    "quantity": "",
+    "value": "Alexandrite (transparent dark green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Gem 500 gp",
+    "quantity": "",
+    "value": "Aquamarine (transparent pale blue-green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Gem 500 gp",
+    "quantity": "",
+    "value": "Black pearl (opaque pure black)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Gem 500 gp",
+    "quantity": "",
+    "value": "Blue spinel (transparent deep blue)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Gem 500 gp",
+    "quantity": "",
+    "value": "Peridot (transparent rich olive green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Gem 500 gp",
+    "quantity": "",
+    "value": "Topaz (transparent golden yellow)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Black opal (translucent dark green with black mottling and golden flecks)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Blue sapphire (transparent blue-white to medium blue)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Emerald (transparent deep bright green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Fire opal (translucent fiery red)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Opal (translucent pale blue with green and golden mottling)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Star ruby (translucent ruby with white star-shaped center)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Star sapphire (translucent blue sapphire with white star-shaped center)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Gem 1000 gp",
+    "quantity": "",
+    "value": "Yellow sapphire (transparent fiery yellow or yellow green)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Gem 5000 gp",
+    "quantity": "",
+    "value": "Black sapphire (translucent lustrous black with glowing highlights)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Gem 5000 gp",
+    "quantity": "",
+    "value": "Diamond (transparent blue-white, canary, pink, brown, or blue)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Gem 5000 gp",
+    "quantity": "",
+    "value": "Jacinth (transparent fiery orange)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Gem 5000 gp",
+    "quantity": "",
+    "value": "Ruby (transparent clear red to deep crimson)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Silver ewer",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Carved bone statuette",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Small gold bracelet",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Cloth-of-gold vestments",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Black velvet mask stitched with silver thread",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Copper chalice with silver filigree",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Pair of engraved bone dice",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Small mirror set in a painted wooden frame",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "9",
+    "diceTo": "9",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Embroidered silk handkerchief",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "10",
+    "diceTo": "10",
+    "filter": "Art 25 gp",
+    "quantity": "",
+    "value": "Gold locket with a painted portrait inside",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Gold ring set with bloodstones",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Carved ivory statuette",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Large gold bracelet",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Silver necklace with a gemstone pendant",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Bronze crown",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Silk robe with gold embroidery",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Large well-made tapestry",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Brass mug with jade inlay",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "9",
+    "diceTo": "9",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Box of turquoise animal figurines",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "10",
+    "diceTo": "10",
+    "filter": "Art 250 gp",
+    "quantity": "",
+    "value": "Gold bird cage with electrum filigree",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Silver chalice set with moonstones",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Silver-plated steellongsword with jet set in hilt",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Carved harp of exotic wood with ivory inlay and zircon gems",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Small gold idol",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Gold dragon comb set with red garnets as eyes",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Bottle stopper cork embossed with gold leaf and set with amethysts",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Ceremonial electrum dagger with a black pearl in the pommel",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Silver and gold brooch",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "9",
+    "diceTo": "9",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Obsidian statuette with gold fittings and inlay",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "10",
+    "diceTo": "10",
+    "filter": "Art 750 gp",
+    "quantity": "",
+    "value": "Painted gold war mask",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Fine gold chain set with a fire opal",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Old masterpiece painting",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Embroidered silk and velvet mantle set with numerous moonstones",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Platinum bracelet set with a sapphire",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Embroidered glove set with jewel chips",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Jeweled anklet",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Gold music box",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Gold circlet set with four aquamarines",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "9",
+    "diceTo": "9",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "Eye patch with a mock eye set in blue sapphire andmoonstone",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "10",
+    "diceTo": "10",
+    "filter": "Art 2500 gp",
+    "quantity": "",
+    "value": "A necklace string of small pink pearls",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Jeweled gold crown",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Jeweled platinum ring",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Small gold statuette set with rubies",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Gold cup set with emeralds",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Gold jewelry box with platinum filigree",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "6",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Painted gold child's sarcophagus",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "7",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Jade game board with solid gold playing pieces",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Art 7500 gp",
+    "quantity": "",
+    "value": "Bejeweled ivory drinking horn with gold filigree",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  }
+]

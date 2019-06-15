@@ -1,13 +1,27 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const { promisify } = require('util');
+const fs = require('fs');
+const path = require('path');
 
 const User = require('../modules/users/model');
 const Campaign = require('../modules/campaigns/model');
 const Adventure = require('../modules/adventures/model');
 const Character = require('../modules/characters/model');
-const Npc = require('../modules/npcs/model')
+const Npc = require('../modules/npcs/model');
+const { TreasureChallenge, TreasureValuable, TreasureMagicItem, TreasureCommon } = require('../modules/treasures/model');
 
-const models = { User, Campaign, Adventure, Character, Npc };
+const models = {
+  User,
+  Campaign,
+  Adventure,
+  Character,
+  Npc,
+  TreasureChallenge,
+  TreasureValuable,
+  TreasureMagicItem,
+  TreasureCommon,
+};
 
 const connectDb = () => {
   mongoose.set('useNewUrlParser', true);
@@ -16,10 +30,11 @@ const connectDb = () => {
   return mongoose.connect(process.env.DATABASE_URL);
 };
 
-const eraseDatabaseOnSync = true;
+const _resetDatabase = true;
+const _resetTreasure = true;
 
 const initializeDb = async () => {
-  if (eraseDatabaseOnSync) {
+  if (_resetDatabase) {
     await Promise.all([
       models.User.deleteMany({}),
       models.Campaign.deleteMany({}),
@@ -156,8 +171,26 @@ const initializeDb = async () => {
     });
     await npc3.save();
   }
+  if (_resetTreasure)
+    await _initTreasure("./modules/treasures/json");
 }
 
+const _initTreasure = async (folder) => {
+  var fileNames = await promisify(fs.readdir)(folder);
+  for (let i = 0; i < fileNames.length; i++) {
+    const fileName = fileNames[i];
+    const tableName = "Treasure" + fileName.replace(".json", "");
+    await models[tableName].deleteMany({});
+    var filePath = path.join(folder, fileName);
+    var content = await promisify(fs.readFile)(filePath);
+    var items = JSON.parse(content);
+    for (let j = 0; j < items.length; j++) {
+      const item = items[j];
+      var dbItem = new models[tableName](item);
+      await dbItem.save();
+    }
+  }
+}
 
 module.exports = {
   connectDb: connectDb,

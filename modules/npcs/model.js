@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const npcsSchema = new mongoose.Schema({
+const npcSchema = new mongoose.Schema({
   campaign: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Campaign',
@@ -21,10 +21,10 @@ const npcsSchema = new mongoose.Schema({
   imageUrl: String,
 });
 
-npcsSchema.methods.filterPublicContent = function () {
+npcSchema.methods.filterPublicContent = function () {
   this.info = null;
 }
 
-const Npc = mongoose.model('Npc', npcsSchema);
+const Npc = mongoose.model('Npc', npcSchema);
 
 module.exports = Npc;

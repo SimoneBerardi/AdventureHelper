@@ -1,0 +1,2192 @@
+[
+  {
+    "diceFrom": "1",
+    "diceTo": "50",
+    "filter": "A",
+    "quantity": "",
+    "value": "Potion of healing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "51",
+    "diceTo": "60",
+    "filter": "A",
+    "quantity": "",
+    "value": "Spell scroll (cantrip)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "61",
+    "diceTo": "70",
+    "filter": "A",
+    "quantity": "",
+    "value": "Potion of climbing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "71",
+    "diceTo": "90",
+    "filter": "A",
+    "quantity": "",
+    "value": "Spell scroll (1st level)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "91",
+    "diceTo": "94",
+    "filter": "A",
+    "quantity": "",
+    "value": "Spell scroll (2nd level)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "95",
+    "diceTo": "98",
+    "filter": "A",
+    "quantity": "",
+    "value": "Potion of greater healing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "99",
+    "diceTo": "99",
+    "filter": "A",
+    "quantity": "",
+    "value": "Bag of holding",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "100",
+    "diceTo": "100",
+    "filter": "A",
+    "quantity": "",
+    "value": "Driftglobe",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "15",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of greater healing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "16",
+    "diceTo": "22",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of fire breath",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "23",
+    "diceTo": "29",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of resistance",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "30",
+    "diceTo": "34",
+    "filter": "B",
+    "quantity": "",
+    "value": "Ammunition, +1",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "35",
+    "diceTo": "39",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of animal friendship",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "40",
+    "diceTo": "44",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of hill giant strength",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "45",
+    "diceTo": "49",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of growth",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "50",
+    "diceTo": "54",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of water breathing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "55",
+    "diceTo": "59",
+    "filter": "B",
+    "quantity": "",
+    "value": "Spell scroll (2nd level)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "60",
+    "diceTo": "64",
+    "filter": "B",
+    "quantity": "",
+    "value": "Spell scroll (3rd level)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "65",
+    "diceTo": "67",
+    "filter": "B",
+    "quantity": "",
+    "value": "Bag of holding",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "68",
+    "diceTo": "70",
+    "filter": "B",
+    "quantity": "",
+    "value": "Keoghtom's ointment",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "71",
+    "diceTo": "73",
+    "filter": "B",
+    "quantity": "",
+    "value": "Oil of slipperiness",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "74",
+    "diceTo": "75",
+    "filter": "B",
+    "quantity": "",
+    "value": "Dust of disappearance",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "76",
+    "diceTo": "77",
+    "filter": "B",
+    "quantity": "",
+    "value": "Dust of dryness",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "78",
+    "diceTo": "79",
+    "filter": "B",
+    "quantity": "",
+    "value": "Dust of sneezing and choking",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "80",
+    "diceTo": "81",
+    "filter": "B",
+    "quantity": "",
+    "value": "Elemental gem",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "82",
+    "diceTo": "83",
+    "filter": "B",
+    "quantity": "",
+    "value": "Philter of love",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "84",
+    "diceTo": "84",
+    "filter": "B",
+    "quantity": "",
+    "value": "Alchemy jug",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "85",
+    "diceTo": "85",
+    "filter": "B",
+    "quantity": "",
+    "value": "Cap of water breathing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "86",
+    "diceTo": "86",
+    "filter": "B",
+    "quantity": "",
+    "value": "Cloak of the manta ray",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "87",
+    "diceTo": "87",
+    "filter": "B",
+    "quantity": "",
+    "value": "Driftglobe",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "88",
+    "diceTo": "88",
+    "filter": "B",
+    "quantity": "",
+    "value": "Goggles of night",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "89",
+    "diceTo": "89",
+    "filter": "B",
+    "quantity": "",
+    "value": "Helm of comprehending languages",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "90",
+    "diceTo": "90",
+    "filter": "B",
+    "quantity": "",
+    "value": "Immovable rod",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "91",
+    "diceTo": "91",
+    "filter": "B",
+    "quantity": "",
+    "value": "Lantern of revealing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "92",
+    "diceTo": "92",
+    "filter": "B",
+    "quantity": "",
+    "value": "Mariner's armor",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "93",
+    "diceTo": "93",
+    "filter": "B",
+    "quantity": "",
+    "value": "Mithral armor",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "94",
+    "diceTo": "94",
+    "filter": "B",
+    "quantity": "",
+    "value": "Potion of poison",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "95",
+    "diceTo": "95",
+    "filter": "B",
+    "quantity": "",
+    "value": "Ring of swimming",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "96",
+    "diceTo": "96",
+    "filter": "B",
+    "quantity": "",
+    "value": "Robe of useful items",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "97",
+    "diceTo": "97",
+    "filter": "B",
+    "quantity": "",
+    "value": "Rope of climbing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "98",
+    "diceTo": "98",
+    "filter": "B",
+    "quantity": "",
+    "value": "Saddle of the cavalier",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "99",
+    "diceTo": "99",
+    "filter": "B",
+    "quantity": "",
+    "value": "Wand of magic detection",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "100",
+    "diceTo": "100",
+    "filter": "B",
+    "quantity": "",
+    "value": "Wand of secrets",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "15",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of superior healing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "16",
+    "diceTo": "22",
+    "filter": "C",
+    "quantity": "",
+    "value": "Spell scroll (4thlevel)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "23",
+    "diceTo": "27",
+    "filter": "C",
+    "quantity": "",
+    "value": "Ammunition, +2",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "28",
+    "diceTo": "32",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of clairvoyance",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "33",
+    "diceTo": "37",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of diminution",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "38",
+    "diceTo": "42",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of gaseous form",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "43",
+    "diceTo": "47",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of frost giant strength",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "48",
+    "diceTo": "52",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of stone giant strength",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "53",
+    "diceTo": "57",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of heroism",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "58",
+    "diceTo": "62",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of invulnerability",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "63",
+    "diceTo": "67",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of mind reading",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "68",
+    "diceTo": "72",
+    "filter": "C",
+    "quantity": "",
+    "value": "Spell scroll (5thlevel)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "73",
+    "diceTo": "75",
+    "filter": "C",
+    "quantity": "",
+    "value": "Elixir of health",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "76",
+    "diceTo": "78",
+    "filter": "C",
+    "quantity": "",
+    "value": "Oil of etherealness",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "79",
+    "diceTo": "81",
+    "filter": "C",
+    "quantity": "",
+    "value": "Potion of fire giant strength",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "82",
+    "diceTo": "84",
+    "filter": "C",
+    "quantity": "",
+    "value": "Quaal's feather token",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "85",
+    "diceTo": "87",
+    "filter": "C",
+    "quantity": "",
+    "value": "Scroll of protection",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "88",
+    "diceTo": "89",
+    "filter": "C",
+    "quantity": "",
+    "value": "Bag of beans",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "90",
+    "diceTo": "91",
+    "filter": "C",
+    "quantity": "",
+    "value": "Bead of force",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "92",
+    "diceTo": "92",
+    "filter": "C",
+    "quantity": "",
+    "value": "Chime of opening",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "93",
+    "diceTo": "93",
+    "filter": "C",
+    "quantity": "",
+    "value": "Decanter of endless water",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "94",
+    "diceTo": "94",
+    "filter": "C",
+    "quantity": "",
+    "value": "Eyes of minute seeing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "95",
+    "diceTo": "95",
+    "filter": "C",
+    "quantity": "",
+    "value": "Folding boat",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "96",
+    "diceTo": "96",
+    "filter": "C",
+    "quantity": "",
+    "value": "Heward's handy haversack",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "97",
+    "diceTo": "97",
+    "filter": "C",
+    "quantity": "",
+    "value": "Horseshoes of speed",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "98",
+    "diceTo": "98",
+    "filter": "C",
+    "quantity": "",
+    "value": "Necklace of fireballs",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "99",
+    "diceTo": "99",
+    "filter": "C",
+    "quantity": "",
+    "value": "Periapt of health",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "100",
+    "diceTo": "100",
+    "filter": "C",
+    "quantity": "",
+    "value": "Sending Stones",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "15",
+    "filter": "F",
+    "quantity": "",
+    "value": "Weapon, +1",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "16",
+    "diceTo": "18",
+    "filter": "F",
+    "quantity": "",
+    "value": "Shield,+ 1",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "19",
+    "diceTo": "21",
+    "filter": "F",
+    "quantity": "",
+    "value": "Sentinel shield",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "22",
+    "diceTo": "23",
+    "filter": "F",
+    "quantity": "",
+    "value": "Amulet of proof against detection and location",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "24",
+    "diceTo": "25",
+    "filter": "F",
+    "quantity": "",
+    "value": "Boots of elvenkind",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "26",
+    "diceTo": "27",
+    "filter": "F",
+    "quantity": "",
+    "value": "Boots of striding and springing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "27",
+    "diceTo": "29",
+    "filter": "F",
+    "quantity": "",
+    "value": "Bracers of archery",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "30",
+    "diceTo": "31",
+    "filter": "F",
+    "quantity": "",
+    "value": "Brooch of shielding",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "32",
+    "diceTo": "33",
+    "filter": "F",
+    "quantity": "",
+    "value": "Broom of flying",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "34",
+    "diceTo": "35",
+    "filter": "F",
+    "quantity": "",
+    "value": "Cloak of elvenkind",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "36",
+    "diceTo": "37",
+    "filter": "F",
+    "quantity": "",
+    "value": "Cloak of protection",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "38",
+    "diceTo": "39",
+    "filter": "F",
+    "quantity": "",
+    "value": "Gauntlets of ogre power",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "40",
+    "diceTo": "41",
+    "filter": "F",
+    "quantity": "",
+    "value": "Hat of disguise",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "42",
+    "diceTo": "43",
+    "filter": "F",
+    "quantity": "",
+    "value": "Javelin of lightning",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "44",
+    "diceTo": "45",
+    "filter": "F",
+    "quantity": "",
+    "value": "Pearl of power",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "46",
+    "diceTo": "47",
+    "filter": "F",
+    "quantity": "",
+    "value": "Rod of the pact keeper, + 1",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "48",
+    "diceTo": "49",
+    "filter": "F",
+    "quantity": "",
+    "value": "Slippers of spider climbing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "50",
+    "diceTo": "51",
+    "filter": "F",
+    "quantity": "",
+    "value": "Staff of the adder",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "52",
+    "diceTo": "53",
+    "filter": "F",
+    "quantity": "",
+    "value": "Staff of the python",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "54",
+    "diceTo": "55",
+    "filter": "F",
+    "quantity": "",
+    "value": "Sword of vengeance",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "56",
+    "diceTo": "57",
+    "filter": "F",
+    "quantity": "",
+    "value": "Trident of fish command",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "58",
+    "diceTo": "59",
+    "filter": "F",
+    "quantity": "",
+    "value": "Wand of magic missiles",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "60",
+    "diceTo": "61",
+    "filter": "F",
+    "quantity": "",
+    "value": "Wand of the war mage, + 1",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "62",
+    "diceTo": "63",
+    "filter": "F",
+    "quantity": "",
+    "value": "Wand of web",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "64",
+    "diceTo": "65",
+    "filter": "F",
+    "quantity": "",
+    "value": "Weapon of warning",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "66",
+    "diceTo": "66",
+    "filter": "F",
+    "quantity": "",
+    "value": "Adamantine armor (chain mail)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "67",
+    "diceTo": "67",
+    "filter": "F",
+    "quantity": "",
+    "value": "Adamantine armor (chain shirt)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "68",
+    "diceTo": "68",
+    "filter": "F",
+    "quantity": "",
+    "value": "Adamantine armor (scale mail)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "69",
+    "diceTo": "69",
+    "filter": "F",
+    "quantity": "",
+    "value": "Bag of tricks (gray)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "70",
+    "diceTo": "70",
+    "filter": "F",
+    "quantity": "",
+    "value": "Bag of tricks (rust)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "71",
+    "diceTo": "71",
+    "filter": "F",
+    "quantity": "",
+    "value": "Bag of tricks (tan)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "72",
+    "diceTo": "72",
+    "filter": "F",
+    "quantity": "",
+    "value": "Boots of the winterlands",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "73",
+    "diceTo": "73",
+    "filter": "F",
+    "quantity": "",
+    "value": "Circlet of blasting",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "74",
+    "diceTo": "74",
+    "filter": "F",
+    "quantity": "",
+    "value": "Deck of illusions",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "75",
+    "diceTo": "75",
+    "filter": "F",
+    "quantity": "",
+    "value": "Eversmoking bottle",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "76",
+    "diceTo": "76",
+    "filter": "F",
+    "quantity": "",
+    "value": "Eyes of charming",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "77",
+    "diceTo": "77",
+    "filter": "F",
+    "quantity": "",
+    "value": "Eyes of the eagle",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "78",
+    "diceTo": "78",
+    "filter": "F",
+    "quantity": "",
+    "value": "Figurine of wondrous power (silver raven)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "79",
+    "diceTo": "79",
+    "filter": "F",
+    "quantity": "",
+    "value": "Gem of brightness",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "80",
+    "diceTo": "80",
+    "filter": "F",
+    "quantity": "",
+    "value": "Gloves of missile snaring",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "81",
+    "diceTo": "81",
+    "filter": "F",
+    "quantity": "",
+    "value": "Gloves of swimming and climbing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "82",
+    "diceTo": "82",
+    "filter": "F",
+    "quantity": "",
+    "value": "Gloves of thievery",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "83",
+    "diceTo": "83",
+    "filter": "F",
+    "quantity": "",
+    "value": "Headband of intellect",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "84",
+    "diceTo": "84",
+    "filter": "F",
+    "quantity": "",
+    "value": "Helm of telepathy",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "85",
+    "diceTo": "85",
+    "filter": "F",
+    "quantity": "",
+    "value": "Instrument of the bards (Doss lute)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "86",
+    "diceTo": "86",
+    "filter": "F",
+    "quantity": "",
+    "value": "Instrument of the bards (Fochlucan bandore)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "87",
+    "diceTo": "87",
+    "filter": "F",
+    "quantity": "",
+    "value": "Instrument of the bards (Mac-Fuimidh cittern)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "88",
+    "diceTo": "88",
+    "filter": "F",
+    "quantity": "",
+    "value": "Medallion of thoughts",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "89",
+    "diceTo": "89",
+    "filter": "F",
+    "quantity": "",
+    "value": "Necklace of adaptation",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "90",
+    "diceTo": "90",
+    "filter": "F",
+    "quantity": "",
+    "value": "Periapt of wound closure",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "91",
+    "diceTo": "91",
+    "filter": "F",
+    "quantity": "",
+    "value": "Pipes of haunting",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "92",
+    "diceTo": "92",
+    "filter": "F",
+    "quantity": "",
+    "value": "Pipes of the sewers",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "93",
+    "diceTo": "93",
+    "filter": "F",
+    "quantity": "",
+    "value": "Ring of jumping",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "94",
+    "diceTo": "94",
+    "filter": "F",
+    "quantity": "",
+    "value": "Ring of mind shielding",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "95",
+    "diceTo": "95",
+    "filter": "F",
+    "quantity": "",
+    "value": "Ring of warmth",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "96",
+    "diceTo": "96",
+    "filter": "F",
+    "quantity": "",
+    "value": "Ring of water walking",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "97",
+    "diceTo": "97",
+    "filter": "F",
+    "quantity": "",
+    "value": "Quiver of Ehlonna",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "98",
+    "diceTo": "98",
+    "filter": "F",
+    "quantity": "",
+    "value": "Stone of good luck",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "99",
+    "diceTo": "99",
+    "filter": "F",
+    "quantity": "",
+    "value": "Wind fan",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "100",
+    "diceTo": "100",
+    "filter": "F",
+    "quantity": "",
+    "value": "Winged boots",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "11",
+    "filter": "G",
+    "quantity": "",
+    "value": "Weapon, +2",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "12",
+    "diceTo": "14",
+    "filter": "G",
+    "quantity": "",
+    "value": "Figurine of wondrous power",
+    "tableReference": "Common",
+    "tableFilter": "Figurine",
+    "tableDice": "d8"
+  },
+  {
+    "diceFrom": "15",
+    "diceTo": "15",
+    "filter": "G",
+    "quantity": "",
+    "value": "Adamantine armor (breastplate)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "16",
+    "diceTo": "16",
+    "filter": "G",
+    "quantity": "",
+    "value": "Adamantine armor (splint)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "17",
+    "diceTo": "17",
+    "filter": "G",
+    "quantity": "",
+    "value": "Amulet of health",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "18",
+    "diceTo": "18",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor of vulnerability",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "19",
+    "diceTo": "19",
+    "filter": "G",
+    "quantity": "",
+    "value": "Arrow-catching shield",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "20",
+    "diceTo": "20",
+    "filter": "G",
+    "quantity": "",
+    "value": "Belt of dwarvenkind",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "21",
+    "diceTo": "21",
+    "filter": "G",
+    "quantity": "",
+    "value": "Belt of hill giant strength",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "22",
+    "diceTo": "22",
+    "filter": "G",
+    "quantity": "",
+    "value": "Berserker axe",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "23",
+    "diceTo": "23",
+    "filter": "G",
+    "quantity": "",
+    "value": "Boots of levitation",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "24",
+    "diceTo": "24",
+    "filter": "G",
+    "quantity": "",
+    "value": "Boots of speed",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "25",
+    "diceTo": "25",
+    "filter": "G",
+    "quantity": "",
+    "value": "Bowl of commanding water elementals",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "26",
+    "diceTo": "26",
+    "filter": "G",
+    "quantity": "",
+    "value": "Bracers of defense",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "27",
+    "diceTo": "27",
+    "filter": "G",
+    "quantity": "",
+    "value": "Brazier of commanding fire elementals",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "28",
+    "diceTo": "28",
+    "filter": "G",
+    "quantity": "",
+    "value": "Cape of the mountebank",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "29",
+    "diceTo": "29",
+    "filter": "G",
+    "quantity": "",
+    "value": "Censer of controlling air elementals",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "30",
+    "diceTo": "30",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor, +1 chain mail",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "31",
+    "diceTo": "31",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor of resistance (chain mail)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "32",
+    "diceTo": "32",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor of resistance (chain shirt)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "33",
+    "diceTo": "33",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor,+ 1 chain shirt",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "34",
+    "diceTo": "34",
+    "filter": "G",
+    "quantity": "",
+    "value": "Cloak of displacement",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "35",
+    "diceTo": "35",
+    "filter": "G",
+    "quantity": "",
+    "value": "Cloak of the bat",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "36",
+    "diceTo": "36",
+    "filter": "G",
+    "quantity": "",
+    "value": "Cube of force",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "37",
+    "diceTo": "37",
+    "filter": "G",
+    "quantity": "",
+    "value": "Daern's instant fortress",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "38",
+    "diceTo": "38",
+    "filter": "G",
+    "quantity": "",
+    "value": "Dagger of venom",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "39",
+    "diceTo": "39",
+    "filter": "G",
+    "quantity": "",
+    "value": "Dimensional shackles",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "40",
+    "diceTo": "40",
+    "filter": "G",
+    "quantity": "",
+    "value": "Dragon slayer",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "41",
+    "diceTo": "41",
+    "filter": "G",
+    "quantity": "",
+    "value": "Elven chain",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "42",
+    "diceTo": "42",
+    "filter": "G",
+    "quantity": "",
+    "value": "Flame tongue",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "43",
+    "diceTo": "43",
+    "filter": "G",
+    "quantity": "",
+    "value": "Gem of seeing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "44",
+    "diceTo": "44",
+    "filter": "G",
+    "quantity": "",
+    "value": "Giant slayer",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "45",
+    "diceTo": "45",
+    "filter": "G",
+    "quantity": "",
+    "value": "Clamoured studded leather",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "46",
+    "diceTo": "46",
+    "filter": "G",
+    "quantity": "",
+    "value": "Helm of teleportation",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "47",
+    "diceTo": "47",
+    "filter": "G",
+    "quantity": "",
+    "value": "Horn of blasting",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "48",
+    "diceTo": "48",
+    "filter": "G",
+    "quantity": "",
+    "value": "Horn of Valhalla (silver or brass)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "49",
+    "diceTo": "49",
+    "filter": "G",
+    "quantity": "",
+    "value": "Instrument of the bards (Canaithmandolin)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "50",
+    "diceTo": "50",
+    "filter": "G",
+    "quantity": "",
+    "value": "Instrument ofthe bards (Cii lyre)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "51",
+    "diceTo": "51",
+    "filter": "G",
+    "quantity": "",
+    "value": "loun stone (awareness)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "52",
+    "diceTo": "52",
+    "filter": "G",
+    "quantity": "",
+    "value": "loun stone (protection)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "53",
+    "diceTo": "53",
+    "filter": "G",
+    "quantity": "",
+    "value": "loun stone (reserve)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "54",
+    "diceTo": "54",
+    "filter": "G",
+    "quantity": "",
+    "value": "loun stone (sustenance)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "55",
+    "diceTo": "55",
+    "filter": "G",
+    "quantity": "",
+    "value": "Iron bands of Bilarro",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "56",
+    "diceTo": "56",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor, + 1 leather",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "57",
+    "diceTo": "57",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor of resistance (leather)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "58",
+    "diceTo": "58",
+    "filter": "G",
+    "quantity": "",
+    "value": "Mace of disruption",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "59",
+    "diceTo": "59",
+    "filter": "G",
+    "quantity": "",
+    "value": "Mace of smiting",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "60",
+    "diceTo": "60",
+    "filter": "G",
+    "quantity": "",
+    "value": "Mace of terror",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "61",
+    "diceTo": "61",
+    "filter": "G",
+    "quantity": "",
+    "value": "Mantle of spell resistance",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "62",
+    "diceTo": "62",
+    "filter": "G",
+    "quantity": "",
+    "value": "Necklace of prayer beads",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "63",
+    "diceTo": "63",
+    "filter": "G",
+    "quantity": "",
+    "value": "Periapt of proof against poison",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "64",
+    "diceTo": "64",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of animal influence",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "65",
+    "diceTo": "65",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of evasion",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "66",
+    "diceTo": "66",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of feather falling",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "67",
+    "diceTo": "67",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of free action",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "68",
+    "diceTo": "68",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of protection",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "69",
+    "diceTo": "69",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of resistance",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "70",
+    "diceTo": "70",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of spell storing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "71",
+    "diceTo": "71",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of the ram",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "72",
+    "diceTo": "72",
+    "filter": "G",
+    "quantity": "",
+    "value": "Ring of X-ray vision",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "73",
+    "diceTo": "73",
+    "filter": "G",
+    "quantity": "",
+    "value": "Robe of eyes",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "74",
+    "diceTo": "74",
+    "filter": "G",
+    "quantity": "",
+    "value": "Rod of rulership",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "75",
+    "diceTo": "75",
+    "filter": "G",
+    "quantity": "",
+    "value": "Rod of the pact keeper, +2",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "76",
+    "diceTo": "76",
+    "filter": "G",
+    "quantity": "",
+    "value": "Rope of entanglement",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "77",
+    "diceTo": "77",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor, +1 scale mail",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "78",
+    "diceTo": "78",
+    "filter": "G",
+    "quantity": "",
+    "value": "Armor of resistance (scale mail)",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "79",
+    "diceTo": "79",
+    "filter": "G",
+    "quantity": "",
+    "value": "Shield, +2",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "80",
+    "diceTo": "80",
+    "filter": "G",
+    "quantity": "",
+    "value": "Shield of missile attraction",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "81",
+    "diceTo": "81",
+    "filter": "G",
+    "quantity": "",
+    "value": "Staff of charming",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "82",
+    "diceTo": "82",
+    "filter": "G",
+    "quantity": "",
+    "value": "Staff of healing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "83",
+    "diceTo": "83",
+    "filter": "G",
+    "quantity": "",
+    "value": "Staff of swarming insects",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "84",
+    "diceTo": "84",
+    "filter": "G",
+    "quantity": "",
+    "value": "Staff of the woodlands",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "85",
+    "diceTo": "85",
+    "filter": "G",
+    "quantity": "",
+    "value": "Staff of withering",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "86",
+    "diceTo": "86",
+    "filter": "G",
+    "quantity": "",
+    "value": "Stone of controlling earthelementals",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "87",
+    "diceTo": "87",
+    "filter": "G",
+    "quantity": "",
+    "value": "Sun blade",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "88",
+    "diceTo": "88",
+    "filter": "G",
+    "quantity": "",
+    "value": "Sword of life stealing",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "89",
+    "diceTo": "89",
+    "filter": "G",
+    "quantity": "",
+    "value": "Sword of wounding",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "90",
+    "diceTo": "90",
+    "filter": "G",
+    "quantity": "",
+    "value": "Tentacle rod",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "91",
+    "diceTo": "91",
+    "filter": "G",
+    "quantity": "",
+    "value": "Vicious weapon",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "92",
+    "diceTo": "92",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of binding",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "93",
+    "diceTo": "93",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of enemy detection",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "94",
+    "diceTo": "94",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of fear",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "95",
+    "diceTo": "95",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of fireballs",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "96",
+    "diceTo": "96",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of lightning bolts",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "97",
+    "diceTo": "97",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of paralysis",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "98",
+    "diceTo": "98",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of the war mage, +2",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "99",
+    "diceTo": "99",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wand of wonder",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "100",
+    "diceTo": "100",
+    "filter": "G",
+    "quantity": "",
+    "value": "Wings of flying",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "diceFrom": "1",
+    "diceTo": "100",
+    "filter": "Challenge 0-4",
+    "quantity": "6d6X100",
+    "value": "CP",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "100",
+    "filter": "Challenge 0-4",
+    "quantity": "3d6X100",
+    "value": "SP",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "1",
+    "diceTo": "100",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6X10",
+    "value": "GP",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "7",
+    "diceTo": "16",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 10 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "17",
+    "diceTo": "26",
+    "filter": "Challenge 0-4",
+    "quantity": "2d4",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Art 25 gp",
+    "tableDice": "d10"
+  },
+  {
+    "diceFrom": "27",
+    "diceTo": "36",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 50 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "37",
+    "diceTo": "44",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 10 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "37",
+    "diceTo": "44",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "A",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "45",
+    "diceTo": "52",
+    "filter": "Challenge 0-4",
+    "quantity": "2d4",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Art 25 gp",
+    "tableDice": "d10"
+  },
+  {
+    "diceFrom": "45",
+    "diceTo": "52",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "A",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "53",
+    "diceTo": "60",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 50 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "53",
+    "diceTo": "60",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "A",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "61",
+    "diceTo": "65",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 10 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "61",
+    "diceTo": "65",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "B",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "66",
+    "diceTo": "70",
+    "filter": "Challenge 0-4",
+    "quantity": "2d4",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Art 25 gp",
+    "tableDice": "d10"
+  },
+  {
+    "diceFrom": "66",
+    "diceTo": "70",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "B",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "71",
+    "diceTo": "75",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 50 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "71",
+    "diceTo": "75",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "B",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "76",
+    "diceTo": "78",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 10 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "76",
+    "diceTo": "78",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "C",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "79",
+    "diceTo": "80",
+    "filter": "Challenge 0-4",
+    "quantity": "2d4",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Art 25 gp",
+    "tableDice": "d10"
+  },
+  {
+    "diceFrom": "79",
+    "diceTo": "80",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "C",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "81",
+    "diceTo": "85",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 50 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "81",
+    "diceTo": "85",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "C",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "86",
+    "diceTo": "92",
+    "filter": "Challenge 0-4",
+    "quantity": "2d4",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Art 25 gp",
+    "tableDice": "d10"
+  },
+  {
+    "diceFrom": "86",
+    "diceTo": "92",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "C",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "93",
+    "diceTo": "97",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 50 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "93",
+    "diceTo": "97",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "F",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "98",
+    "diceTo": "99",
+    "filter": "Challenge 0-4",
+    "quantity": "2d4",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Art 25 gp",
+    "tableDice": "d10"
+  },
+  {
+    "diceFrom": "98",
+    "diceTo": "99",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "G",
+    "tableDice": "d100"
+  },
+  {
+    "diceFrom": "100",
+    "diceTo": "100",
+    "filter": "Challenge 0-4",
+    "quantity": "2d6",
+    "value": "",
+    "tableReference": "Valuable",
+    "tableFilter": "Gem 50 gp",
+    "tableDice": "d12"
+  },
+  {
+    "diceFrom": "100",
+    "diceTo": "100",
+    "filter": "Challenge 0-4",
+    "quantity": "1d6",
+    "value": "",
+    "tableReference": "MagicItem",
+    "tableFilter": "G",
+    "tableDice": "d100"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "diceFrom": "1",
+    "diceTo": "1",
+    "filter": "Figurine",
+    "quantity": "",
+    "value": "Bronze griffon",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "2",
+    "diceTo": "2",
+    "filter": "Figurine",
+    "quantity": "",
+    "value": "Ebony fly",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "3",
+    "diceTo": "3",
+    "filter": "Figurine",
+    "quantity": "",
+    "value": "Golden lions",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "4",
+    "diceTo": "4",
+    "filter": "Figurine",
+    "quantity": "",
+    "value": "Ivory goats",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "5",
+    "diceTo": "5",
+    "filter": "Figurine",
+    "quantity": "",
+    "value": "Marble elephant",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "6",
+    "diceTo": "7",
+    "filter": "Figurine",
+    "quantity": "",
+    "value": "Onyx dog",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  },
+  {
+    "diceFrom": "8",
+    "diceTo": "8",
+    "filter": "Figurine",
+    "quantity": "",
+    "value": "Serpentine owl",
+    "tableReference": "",
+    "tableFilter": "",
+    "tableDice": ""
+  }
+]
