@@ -9,7 +9,7 @@ const Campaign = require('../modules/campaigns/model');
 const Adventure = require('../modules/adventures/model');
 const Character = require('../modules/characters/model');
 const Npc = require('../modules/npcs/model');
-const { TreasureChallenge, TreasureValuable, TreasureMagicItem, TreasureCommon } = require('../modules/treasures/model');
+const { TreasureChallenge, TreasureValuable, TreasureMagicItem, TreasureCommon, Treasure } = require('../modules/treasures/model');
 
 const models = {
   User,
@@ -21,6 +21,7 @@ const models = {
   TreasureValuable,
   TreasureMagicItem,
   TreasureCommon,
+  Treasure,
 };
 
 const connectDb = () => {
@@ -170,6 +171,42 @@ const initializeDb = async () => {
       publicInfo: 'Info pubbliche dell\'npc 3',
     });
     await npc3.save();
+
+    const treasure1 = new models.Treasure({
+      campaign: campaign1.id,
+      description: 'Descrizione tesoro 1',
+      items: [
+        'Oggetto 1 del tesoro',
+        'Oggetto 2 del tesoro',
+        'Oggetto 3 del tesoro',
+        'Oggetto 4 del tesoro',
+        'Oggetto 5 del tesoro'
+      ]
+    });
+    await treasure1.save();
+
+    const treasure2 = new models.Treasure({
+      campaign: campaign1.id,
+      description: 'Descrizione tesoro 2',
+      items: [
+        'Oggetto 1 del tesoro',
+        'Oggetto 2 del tesoro',
+        'Oggetto 3 del tesoro',
+      ]
+    });
+    await treasure2.save();
+
+    const treasure3 = new models.Treasure({
+      campaign: campaign1.id,
+      description: 'Descrizione tesoro 3',
+      items: [
+        'Oggetto 1 del tesoro',
+        'Oggetto 2 del tesoro',
+        'Oggetto 3 del tesoro',
+        'Oggetto 4 del tesoro',
+      ]
+    });
+    await treasure3.save();
   }
   if (_resetTreasure)
     await _initTreasure("./modules/treasures/json");

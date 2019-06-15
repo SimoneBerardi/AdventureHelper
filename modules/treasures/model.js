@@ -25,9 +25,28 @@ const TreasureValuable = mongoose.model('TreasureValuable', TreasureTableSchema)
 const TreasureMagicItem = mongoose.model('TreasureMagicItem', TreasureTableSchema);
 const TreasureCommon = mongoose.model('TreasureCommon', TreasureTableSchema);
 
+const TreasureSchema = new mongoose.Schema({
+  campaign: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Campaign',
+    required: true
+  },
+  description: String,
+  items: [String],
+  status: {
+    type: String,
+    enum: ['created', 'shared', 'distributed'],
+    default: 'created',
+  },
+});
+
+const Treasure = mongoose.model('Treasure', TreasureSchema);
+
 module.exports = {
   TreasureChallenge,
   TreasureValuable,
   TreasureMagicItem,
   TreasureCommon,
+  TreasureSchema,
+  Treasure,
 };

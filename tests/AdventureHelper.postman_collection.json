@@ -877,6 +877,293 @@
 					"_postman_isSubFolder": true
 				},
 				{
+					"name": "Treasures",
+					"item": [
+						{
+							"name": "getAll",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "89280f26-60c3-47ed-942b-320357f65a2e",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/treasures",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"treasures"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "generate",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "5283fd24-2e6d-4c0f-9403-59e57927cfcb",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/treasures/generate",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"treasures",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getById",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "f42e2685-6d99-4c3b-84f6-a66af7a790cd",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/treasures',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"treasureId\", response.json()[0]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/treasures/{{treasureId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"treasures",
+										"{{treasureId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "remove",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "c2a44327-3930-4ef5-bf15-f1a2e7c62fc9",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/treasures',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"treasureId\", response.json()[1]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/treasures/{{treasureId}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"treasures",
+										"{{treasureId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "share",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "5d3906c2-eb22-4989-868e-0f730ac33606",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/treasures',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"treasureId\", response.json()[0]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"name\": \"Nuovo npc\",\n\t\"description\": \"Descrizione nuovo npc\",\n\t\"info\": \"Info nuovo npc\",\n\t\"publicInfo\": \"Info pubbliche nuovo npc\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/treasures/{{treasureId}}/share",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"treasures",
+										"{{treasureId}}",
+										"share"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "distribute",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "5d3906c2-eb22-4989-868e-0f730ac33606",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"    pm.sendRequest({",
+											"        url: pm.environment.get(\"url\") + '/campaigns/' + pm.environment.get(\"campaignId\") + '/treasures',",
+											"        method: 'GET',",
+											"    }, function (err, response) {",
+											"        pm.environment.set(\"treasureId\", response.json()[0]._id);",
+											"    });",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"name\": \"Nuovo npc\",\n\t\"description\": \"Descrizione nuovo npc\",\n\t\"info\": \"Info nuovo npc\",\n\t\"publicInfo\": \"Info pubbliche nuovo npc\"\n}"
+								},
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/treasures/{{treasureId}}/distribute",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"treasures",
+										"{{treasureId}}",
+										"distribute"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
 					"name": "getAll",
 					"event": [
 						{

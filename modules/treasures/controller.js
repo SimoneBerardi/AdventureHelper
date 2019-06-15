@@ -1,23 +1,16 @@
-const auth = require('../../utility/authentication');
-const { promisify } = require('util');
-const fs = require('fs');
-const path = require('path');
 const generator = require('./generator');
 
 const getAll = async (req, res) => {
   try {
-    var npcs = await req.context.models.Npc.find({
+    var treasures = await req.context.models.Treasure.find({
       campaign: req.params.campaignId,
     });
     if (!req.context.user.isCampaignMaster) {
-      npcs = npcs.filter((npc) => {
-        return npc.status === "shared";
-      });
-      npcs.forEach(npc => {
-        npc.filterPublicContent();
+      treasures = treasures.filter((treasure) => {
+        return treasure.status === "shared" || treasure.status === "distributed";
       });
     }
-    return res.send(npcs);
+    return res.send(treasures);
   } catch (err) {
     return res.status(500).send();
   }
@@ -26,7 +19,11 @@ const getAll = async (req, res) => {
 const generate = async (req, res) => {
   try {
     var items = await generator.generate(req, 3);
-    return res.send();
+    req.body.campaign = req.params.campaignId;
+    req.body.items = items;
+    req.body.status = "created";
+    var treasure = await req.context.models.Treasure.create(req.body);
+    return res.send(treasure);
   } catch (err) {
     return res.status(500).send();
   }
@@ -34,67 +31,33 @@ const generate = async (req, res) => {
 
 const getById = async (req, res) => {
   try {
-    const npc = await req.context.models.Npc.findOne({
+    const treasure = await req.context.models.Treasure.findOne({
       _id: req.params.id,
       campaign: req.params.campaignId,
     });
 
-    if (npc == null)
+    if (treasure == null)
       return res.status(404).send();
 
     if (!req.context.user.isCampaignMaster)
-      if (npc.status !== "shared")
+      if (treasure.status !== "shared")
         return res.status(403).send();
       else
-        npc.filterPublicContent();
+        treasure.filterPublicContent();
 
-    return res.send(npc);
+    return res.send(treasure);
   } catch (err) {
     return res.status(500).send();
   }
 };
-
-const modify = async (req, res) => {
-  try {
-    req.body._id = req.params.id;
-    await _saveBase64Image(req.body);
-    const npc = await req.context.models.Npc.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
-
-    if (npc == null)
-      return res.status(404).send();
-
-    return res.send(npc);
-  } catch (err) {
-    return res.status(500).send();
-  }
-};
-
-const _saveBase64Image = async (npc) => {
-  if (!npc.image)
-    return;
-
-  var base64Data = npc.image.replace(/^data:image\/png;base64,/, "");
-  var imagePath = path.join(process.env.RESOURCES_PATH, 'npcs');
-  await promisify(fs.mkdir)(imagePath, { recursive: true });
-  var imageName = npc._id + '.png';
-  var imagePath = path.join(imagePath, imageName);
-  await promisify(fs.writeFile)(imagePath, base64Data, 'base64');
-
-  npc.imageUrl = '/resources/npcs/' + imageName;
-  delete npc.image;
-}
 
 const remove = async (req, res) => {
   try {
-    const npc = await req.context.models.Npc.findByIdAndRemove(
+    const treasure = await req.context.models.Treasure.findByIdAndRemove(
       req.params.id,
     );
 
-    if (npc == null)
+    if (treasure == null)
       return res.status(404).send();
 
     return res.send();
@@ -109,16 +72,16 @@ const share = async (req, res) => {
 
 const _changeStatus = async (req, res, status) => {
   try {
-    const npc = await req.context.models.Npc.findOne({
+    const treasure = await req.context.models.Treasure.findOne({
       _id: req.params.id,
       campaign: req.params.campaignId,
     });
 
-    if (npc == null)
+    if (treasure == null)
       return res.status(404).send();
 
-    npc.status = status;
-    await npc.save();
+    treasure.status = status;
+    await treasure.save();
 
     return res.send();
   } catch (err) {
@@ -131,11 +94,10 @@ const distribute = async (req, res) => {
 }
 
 module.exports = {
-  getAll: getAll,
-  generate: generate,
-  getById: getById,
-  modify: modify,
-  remove: remove,
-  share: share,
-  distribute: distribute,
+  getAll,
+  generate,
+  getById,
+  remove,
+  share,
+  distribute,
 };
