@@ -1,6 +1,16 @@
 const generate = async (req, challenge) => {
-  //TODO calcolare
-  var challengeFilter = "Challenge 0-4";
+  var challengeFilter;
+  if (challenge <= 4) {
+    challengeFilter = "Challenge 0-4";
+  }
+  else if (challenge <= 10) {
+    challengeFilter = "Challenge 5-10";
+  }
+  else if (challenge <= 16) {
+    challengeFilter = "Challenge 11-16";
+  } else {
+    challengeFilter = "Challenge 17+";
+  }
   var diceRoll = _rollDice(100);
   return await _getTableItems(req, "Challenge", challengeFilter, diceRoll);
 }
