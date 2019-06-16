@@ -1,15 +1,17 @@
-const generate = async (req, challenge) => {
-  var challengeFilter;
-  if (challenge <= 4) {
-    challengeFilter = "Challenge 0-4";
+const generate = async (req) => {
+  var treasureType = req.body.treasure.type;
+  var treasureChallenge = req.body.treasure.challenge;
+  var challengeFilter = treasureType + " ";
+  if (treasureChallenge <= 4) {
+    challengeFilter += "Challenge 0-4";
   }
-  else if (challenge <= 10) {
-    challengeFilter = "Challenge 5-10";
+  else if (treasureChallenge <= 10) {
+    challengeFilter += "Challenge 5-10";
   }
-  else if (challenge <= 16) {
-    challengeFilter = "Challenge 11-16";
+  else if (treasureChallenge <= 16) {
+    challengeFilter += "Challenge 11-16";
   } else {
-    challengeFilter = "Challenge 17+";
+    challengeFilter += "Challenge 17+";
   }
   var diceRoll = _rollDice(100);
   return await _getTableItems(req, "Challenge", challengeFilter, diceRoll);
@@ -33,6 +35,11 @@ const _getTableItems = async (req, tableName, filter, diceRoll) => {
         var diceType = item.tableDice.split("d")[1];
         var subDiceRoll = _rollDice(diceType);
         var subItems = await _getTableItems(req, item.tableReference, item.tableFilter, subDiceRoll);
+        if (item.description !== "")
+          for (let z = 0; z < subItems.length; z++) {
+            const subItem = subItems[z];
+            subItem.description = item.description + " " + subItem.description;
+          }
         result = result.concat(subItems);
       }
     } else {
@@ -43,9 +50,14 @@ const _getTableItems = async (req, tableName, filter, diceRoll) => {
 }
 
 const _generateItemDescription = function (item) {
-  var result = item.value;
-  if (item.quantity !== "")
-    result = _calculateQuantity(item.quantity).toString() + " " + result;
+  var result = item.description;
+  var quantity = item.quantity !== "" ? _calculateQuantity(item.quantity) : 1;
+  if (quantity > 1)
+    result = quantity + " " + result;
+  if (item.value !== "") {
+    var value = Math.round(quantity * item.value * 100) / 100;
+    result += " (" + value + " GP)";
+  }
   return result;
 }
 

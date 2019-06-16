@@ -5,6 +5,7 @@ const TreasureTableSchema = new mongoose.Schema({
   diceTo: Number,
   filter: String,
   quantity: String,
+  description: String,
   value: String,
   tableReference: String,
   tableFilter: String,

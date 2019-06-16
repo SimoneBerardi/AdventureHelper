@@ -18,7 +18,8 @@ const getAll = async (req, res) => {
 
 const generate = async (req, res) => {
   try {
-    var items = await generator.generate(req, req.body.challenge);
+    var items = await generator.generate(req);
+    req.body.treasure = null;
     req.body.campaign = req.params.campaignId;
     req.body.items = items;
     req.body.status = "created";

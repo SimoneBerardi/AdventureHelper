@@ -919,7 +919,7 @@
 							"response": []
 						},
 						{
-							"name": "generate",
+							"name": "generate hoard",
 							"event": [
 								{
 									"listen": "prerequest",
@@ -939,7 +939,66 @@
 							],
 							"request": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"description\": \"Descrizione nuovo tesoro\",\n\t\"treasure\": {\n\t\t\"type\": \"Hoard\",\n\t\t\"challenge\": \"12\"\n\t}\n}"
+								},
+								"url": {
+									"raw": "{{url}}/campaigns/{{campaignId}}/treasures/generate",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"campaigns",
+										"{{campaignId}}",
+										"treasures",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "generate individual",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "5283fd24-2e6d-4c0f-9403-59e57927cfcb",
+										"exec": [
+											"pm.sendRequest({",
+											"    url: pm.environment.get(\"url\") + '/campaigns',",
+											"    method: 'GET',",
+											"}, function (err, response) {",
+											"    pm.environment.set(\"campaignId\", response.json()[0]._id);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"campaign\": \"{{campaignId}}\",\n\t\"description\": \"Descrizione nuovo tesoro\",\n\t\"challenge\": \"2\"\n}"
+								},
 								"url": {
 									"raw": "{{url}}/campaigns/{{campaignId}}/treasures/generate",
 									"host": [
